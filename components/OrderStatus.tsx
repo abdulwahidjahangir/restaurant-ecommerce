@@ -15,8 +15,15 @@ const OrderStatus: React.FC<StatusRowProps> = ({ preparationTime }) => {
       const currentTime = new Date();
       const preparationDate = new Date(preparationTime);
 
+      // Debugging: Log the parsed dates
+      console.log("Current Time:", currentTime);
+      console.log("Preparation Time:", preparationDate);
+
       const elapsedMinutes =
         (currentTime.getTime() - preparationDate.getTime()) / (1000 * 60);
+
+      // Debugging: Log the elapsed minutes
+      console.log("Elapsed Minutes:", elapsedMinutes);
 
       const newStatus =
         elapsedMinutes > 35
@@ -26,6 +33,9 @@ const OrderStatus: React.FC<StatusRowProps> = ({ preparationTime }) => {
           : elapsedMinutes > 10
           ? "Prepared"
           : "Not prepared yet";
+
+      // Debugging: Log the new status
+      console.log("New Status:", newStatus);
 
       setStatus(newStatus);
     };
