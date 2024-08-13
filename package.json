@@ -13,6 +13,7 @@
     "@stripe/stripe-js": "^4.2.0",
     "axios": "^1.7.2",
     "bcryptjs": "^2.4.3",
+    "classnames": "^2.5.1",
     "crypto": "^1.0.1",
     "mongodb": "^6.8.0",
     "mongoose": "^8.5.1",
