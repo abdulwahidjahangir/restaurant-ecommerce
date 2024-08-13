@@ -22,7 +22,10 @@
     "react-dom": "^18",
     "react-toastify": "^10.0.5",
     "stripe": "^16.7.0",
-    "tailwind-scrollbar": "^3.1.0"
+    "tailwind-scrollbar": "^3.1.0",
+    "typescript": "^4.x.x",
+    "@types/react": "^17.x.x",
+    "@types/node": "^14.x.x"
   },
   "devDependencies": {
     "@types/bcrypt": "^5.0.2",
