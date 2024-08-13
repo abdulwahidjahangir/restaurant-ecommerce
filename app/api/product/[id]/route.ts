@@ -1,5 +1,5 @@
-import { connectDB } from "@/config/dbConnection";
-import Product from "@/models/Product";
+import { connectDB } from "../../../../config/dbConnection";
+import Product from "../../../../models/Product";
 import { NextRequest, NextResponse } from "next/server";
 
 type GetProductParams = {

@@ -1,6 +1,6 @@
-import { connectDB } from "@/config/dbConnection";
-import Category from "@/models/Category";
-import Product from "@/models/Product";
+import { connectDB } from "../../../../config/dbConnection";
+import Category from "../../../../models/Category";
+import Product from "../../../../models/Product";
 import { NextResponse, NextRequest } from "next/server";
 
 type CategoryTypeParams = {

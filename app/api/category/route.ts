@@ -1,5 +1,5 @@
-import { connectDB } from "@/config/dbConnection";
-import Category, { ICategory } from "@/models/Category";
+import { connectDB } from "../../../config/dbConnection";
+import Category, { ICategory } from "../../../models/Category";
 import { NextRequest, NextResponse } from "next/server";
 
 interface ResponseData {

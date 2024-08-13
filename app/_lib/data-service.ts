@@ -1,5 +1,5 @@
-import { connectDB } from "@/config/dbConnection";
-import User from "@/models/User";
+import { connectDB } from "../../config/dbConnection";
+import User from "../../models/User";
 
 export async function getUser(email: string) {
     try {

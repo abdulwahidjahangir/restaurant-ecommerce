@@ -1,8 +1,7 @@
-import { auth } from "@/app/_lib/auth";
-import { connectDB } from "@/config/dbConnection";
-import Order from "@/models/Order";
-import User from "@/models/User";
-import Product from "@/models/Product";
+import { connectDB } from "../../../../config/dbConnection";
+import Order from "../../../../models/Order"
+import User from "../../../../models/User";
+import Product from "../../../../models/Product";
 import { NextRequest, NextResponse } from "next/server";
 
 interface OrderData {

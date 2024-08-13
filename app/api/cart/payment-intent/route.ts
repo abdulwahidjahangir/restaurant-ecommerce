@@ -1,7 +1,7 @@
-import { auth } from "@/app/_lib/auth";
-import { connectDB } from "@/config/dbConnection";
-import Cart from "@/models/Cart";
-import User from "@/models/User";
+import { auth } from "../../../_lib/auth";
+import { connectDB } from "../../../../config/dbConnection";
+import Cart from "../../../../models/Cart";
+import User from "../../../../models/User";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 
