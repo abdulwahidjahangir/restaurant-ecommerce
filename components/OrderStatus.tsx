@@ -15,27 +15,18 @@ const OrderStatus: React.FC<StatusRowProps> = ({ preparationTime }) => {
       const currentTime = new Date();
       const preparationDate = new Date(preparationTime);
 
-      // Debugging: Log the parsed dates
-      console.log("Current Time:", currentTime);
-      console.log("Preparation Time:", preparationDate);
-
       const elapsedMinutes =
         (currentTime.getTime() - preparationDate.getTime()) / (1000 * 60);
 
-      // Debugging: Log the elapsed minutes
-      console.log("Elapsed Minutes:", elapsedMinutes);
-
+      // Adjust thresholds by adding 60 minutes (1 hour)
       const newStatus =
-        elapsedMinutes > 35
+        elapsedMinutes > 95 // 35 + 60 minutes
           ? "Delivered"
-          : elapsedMinutes > 15
+          : elapsedMinutes > 75 // 15 + 60 minutes
           ? "On the way to deliver"
-          : elapsedMinutes > 10
+          : elapsedMinutes > 70 // 10 + 60 minutes
           ? "Prepared"
           : "Not prepared yet";
-
-      // Debugging: Log the new status
-      console.log("New Status:", newStatus);
 
       setStatus(newStatus);
     };
