@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { auth } from "../_lib/auth";
 import { redirect } from "next/navigation";
 import axios from "axios";
-import OrderStatus from "@/components/OrderStatus";
+import OrderStatus from "../../components/OrderStatus";
 
 async function getOrders(email: string | null | undefined) {
   try {

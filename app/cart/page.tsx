@@ -1,8 +1,8 @@
 import React from "react";
-import CartItem from "@/components/CartItem";
+import CartItem from "../../components/CartItem";
 import { auth } from "../_lib/auth";
 import { redirect } from "next/navigation";
-import CartPrice from "@/components/CartPrice";
+import CartPrice from "../../components/CartPrice";
 
 export default async function CartPage() {
   const session = await auth();

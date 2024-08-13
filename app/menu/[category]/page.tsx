@@ -1,4 +1,4 @@
-import Pagination from "@/components/Pagination";
+import Pagination from "../../../components/Pagination";
 import axios from "axios";
 import Image from "next/image";
 import Link from "next/link";

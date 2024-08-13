@@ -3,7 +3,7 @@ import React from "react";
 import Menu from "./Menu";
 import CartIcon from "./CartIcon";
 import Image from "next/image";
-import { auth } from "@/app/_lib/auth";
+import { auth } from "../app/_lib/auth";
 import SignOut from "./SignOut";
 
 export default async function Navbar() {
