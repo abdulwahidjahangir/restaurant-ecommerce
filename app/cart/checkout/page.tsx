@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useSession } from "next-auth/react";
 import { toast } from "react-toastify";
 import axios from "axios";
-import Payment from "@/components/Payment";
+import Payment from "../../../components/Payment";
 
 interface FormData {
   firstName: string;

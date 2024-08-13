@@ -1,7 +1,7 @@
 import { connectDB } from "@/config/dbConnection";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from 'bcryptjs';
-import User from "@/models/User";
+import User from "../../../../models/User";
 
 function isValidEmail(email: string): boolean {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

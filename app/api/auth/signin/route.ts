@@ -1,7 +1,7 @@
-import { connectDB } from "@/config/dbConnection";
+import { connectDB } from "../../../../config/dbConnection";
 import { NextRequest, NextResponse } from "next/server";
 import bcrypt from 'bcryptjs';
-import User from "@/models/User";
+import User from "../../../../models/User";
 
 // Utility function to compare plain text password with hashed password
 async function comparePassword(plainPassword: string, hashedPassword: string): Promise<boolean> {
